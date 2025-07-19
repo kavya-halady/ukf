@@ -652,8 +652,7 @@ def create_analysis_plots(sync_data, metrics, output_dir, speed_label):
     ax1.grid(True, alpha=0.3)
     ax1.axis('equal')
     
-   
-    # 2. Position error over time
+# 2. Position error over time
     ax2 = plt.subplot(3, 3, 2)
     ax2.plot(sync_data['time'] - sync_data['time'].iloc[0], position_errors, 'b-', linewidth=2)
     ax2.set_xlabel('Time (s)', fontsize=10)
